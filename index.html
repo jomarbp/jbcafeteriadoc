@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML5 -->
+<html lang="es"> <!-- Inicio de la etiqueta HTML y declaración del idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <title>Cafetería delicioso</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <script src="disableRightClick.js"></script>
+    <style type="text/css">
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el cuerpo de la página */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+header {
+    background-color: #FFA500; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno en el encabezado */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista en la navegación */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 20px; /* Espaciado a la derecha entre elementos de la lista */
+}
+
+section {
+    padding: 20px; /* Espaciado interno en las secciones */
+}
+
+/* Estilos del menú */
+.item {
+    border: 1px solid #ddd; /* Borde alrededor de cada elemento del menú */
+    padding: 10px; /* Espaciado interno en cada elemento del menú */
+    margin: 10px; /* Margen alrededor de cada elemento del menú */
+    text-align: center; /* Alineación del texto en el centro */
+    background-color: #f9f9f9; /* Color de fondo de los elementos del menú */
+}
+
+.item img {
+    max-width: 100%; /* Asegura que las imágenes del menú no sean más anchas que su contenedor */
+    width: 170px;
+}
+
+.price {
+    font-weight: bold; /* Texto en negrita para el precio */
+    color: #FFA500; /* Color naranja para el precio */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #FFA500; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 10px; /* Espaciado interno en el pie de página */
+}
+
+/*FORMULARIO*/
+/* Estilos para el formulario de Pedido en línea */
+#pedido form {
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno en el formulario */
+    border: 1px solid #ddd; /* Borde alrededor del formulario */
+    border-radius: 5px; /* Bordes redondeados para el formulario */
+}
+
+#pedido h2 {
+    text-align: center; /* Alineación del título en el centro */
+}
+
+#pedido label {
+    display: block; /* Hace que las etiquetas estén en una línea separada */
+    margin-top: 10px; /* Espaciado superior para las etiquetas */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+#pedido input[type="text"],
+#pedido input[type="email"],
+#pedido input[type="tel"],
+#pedido input[type="number"],
+#pedido select {
+    width: 100%; /* Ancho completo para los campos de entrada y selección */
+    padding: 10px; /* Espaciado interno en los campos de entrada y selección */
+    margin-bottom: 15px; /* Espaciado inferior para los campos de entrada y selección */
+    border: 1px solid #ddd; /* Borde alrededor de los campos de entrada y selección */
+    border-radius: 3px; /* Bordes redondeados para los campos de entrada y selección */
+    font-size: 16px; /* Tamaño de fuente para los campos de entrada y selección */
+}
+
+#pedido button[type="submit"] {
+    background-color: #FFA500; /* Color de fondo del botón de enviar */
+    color: white; /* Color del texto en el botón de enviar */
+    padding: 10px 20px; /* Espaciado interno en el botón de enviar */
+    border: none; /* Sin borde en el botón de enviar */
+    border-radius: 3px; /* Bordes redondeados para el botón de enviar */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón de enviar */
+    font-size: 16px; /* Tamaño de fuente para el botón de enviar */
+}
+
+#pedido button[type="submit"]:hover {
+    background-color: #FF8000; /* Color de fondo del botón de enviar al pasar el cursor */
+}
+
+/* Estilos para el formulario de Pedido en línea en dispositivos móviles */
+@media (max-width: 600px) {
+    #pedido input[type="text"],
+    #pedido input[type="email"],
+    #pedido input[type="tel"],
+    #pedido input[type="number"],
+    #pedido select {
+        width: 100%; /* Asegura que los campos ocupen el ancho completo en dispositivos móviles */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cafetería delicioso</h1> <!-- Título principal de la página -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li> <!-- Enlace de navegación "Inicio" -->
+                <li><a href="#">Menú</a></li> <!-- Enlace de navegación "Menú" -->
+                <li><a href="#">Pedidos en línea</a></li> <!-- Enlace de navegación "Pedidos en línea" -->
+                <li><a href="#">Contacto</a></li> <!-- Enlace de navegación "Contacto" -->
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Menú</h2> <!-- Título de la sección "Menú" -->
+        <div class="item">
+            <img src="Latte.jpg" alt="Café Latte"> <!-- Imagen del producto con descripción -->
+            <h3>Café Latte</h3> <!-- Nombre del producto -->
+            <p>Un delicioso café latte con leche y espresso.</p> <!-- Descripción del producto -->
+            <p class="price">$3.99</p> <!-- Precio del producto -->
+            <button>Agregar al carrito</button> <!-- Botón para agregar al carrito -->
+        </div>
+        
+       <div class="item">
+            <img src="Capuccino.jpg" alt="Café Capuccino"> <!-- Imagen del producto con descripción -->
+            <h3>Café Capuccino</h3> <!-- Nombre del producto -->
+            <p>Un delicioso café Capuccino con leche y espresso.</p> <!-- Descripción del producto -->
+            <p class="price">$8.99</p> <!-- Precio del producto -->
+            <button>Agregar al carrito</button> <!-- Botón para agregar al carrito -->
+        </div>
+        
+        <!-- Puedes agregar más elementos del menú aquí -->
+    </section>
+    
+   <section id="pedido">
+    <h2>Pedido en línea</h2>
+    <form action="procesar_pedido.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <label for="producto">Producto:</label>
+        <select id="producto" name="producto" required>
+            <option value="Café Latte">Café Latte</option>
+            <option value="Café Mocha">Café Mocha</option>
+            <!-- Agrega más opciones de productos aquí -->
+        </select>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+        
+        <button type="submit">Enviar pedido</button>
+    </form>
+</section>
+
+    
+    <footer>
+        <p>&copy; 2023 Cafetería delicioso</p> <!-- Pie de página con año de copyright -->
+    </footer>
+</body>
+</html>
